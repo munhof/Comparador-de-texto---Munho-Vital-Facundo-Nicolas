@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="60dp"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Comparador de Textos" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="275dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/titulo"
+        android:layout_marginTop="65dp"
+        android:hint="Ingrese el texto para comparar" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="289dp"
+        android:layout_height="66dp"
+        android:layout_below="@id/titulo"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="65dp"
+        android:hint="Ingrese el texto a comparar" />
+
+    <Button
+        android:id="@+id/buttonCompare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText1"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="45dp"
+        android:text="Comparar" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonCompare"
+        android:layout_centerHorizontal="true"
+        android:text="Esperando comparación"
+        android:layout_marginTop="30dp" />
+
+
+
+</RelativeLayout>
